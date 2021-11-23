@@ -1,0 +1,43 @@
+#contact {
+    padding: 4rem 0;
+
+    h2 {
+        font-size: 5rem;
+        text-transform: uppercase;
+    }
+
+    ul {
+        li {
+            line-height:1.4;
+            list-style: circle;
+            margin: 8px 0;
+            
+            a {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .row {
+        align-items: center;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        
+        input, textarea {
+            font-family: 'Open Sans', sans-serif;
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid black;
+            margin-bottom: 0.7rem;
+            resize: vertical;
+        }
+
+        .btn {
+            margin-top: 2rem;
+        }
+    }
+}

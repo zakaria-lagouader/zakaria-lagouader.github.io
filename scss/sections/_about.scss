@@ -1,0 +1,43 @@
+#about {
+    padding: 3rem 0;
+
+    h2 {
+        font-size: 4.5rem;
+        text-transform: uppercase;
+    }
+    
+    .row {
+        h4 {
+            margin: 0;
+            font-size: 1.3rem;
+            text-transform: uppercase;        
+        }
+        p {
+            text-align: justify;
+            line-height:1.4;
+        }
+        ul {
+            li {
+                line-height:1.4;
+                list-style: circle;
+                margin: 8px 0;
+                
+                span {
+                    color: red;
+                }
+            }
+        }
+    }
+}
+.title-1 > div {
+    animation: animate 30s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

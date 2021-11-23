@@ -1,0 +1,28 @@
+@function v($var) {
+    @return var(--#{$var});
+}
+
+:root {
+    --background: #fff;
+    --color: black;
+}
+
+* {
+    font-family: 'Oswald', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: v(color);
+}
+
+body {
+    background-color: v(background);
+    color: v(color);
+}
+
+p , li {
+    font-family: 'Open Sans', sans-serif;
+}
