@@ -55,3 +55,12 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    #projects {
+        h2 {
+            font-size: clamp(4rem, 9vw, 8rem);
+            text-align: center;
+        }
+    }
+}

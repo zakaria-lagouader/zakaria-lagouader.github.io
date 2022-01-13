@@ -39,7 +39,7 @@
                 left: 120%;
                 height: 1px;
                 width: 100px;
-                background: black;
+                background: v(color);
                 display: block;
             }
         }
@@ -82,7 +82,35 @@
             // filter: drop-shadow(3px 9px 12px rgba(0, 0, 0, 0.7));
             polygon {
                 fill: white;
+                stroke: #262636;
             }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .shapes {
+        display: none;
+    }
+}
+@media (max-width: 575px) {
+    #showcase {
+        .content {
+            text-align: center;
+
+            h1 {
+                min-width: 100% !important;
+                max-width: 100% !important;
+                font-size: 17vw;
+                line-height: 17vw;
+            }
+
+        }
+        .btn {
+            margin: 1.5rem auto;
+        }
+        .vertical_text {
+            left: 0;
         }
     }
 }

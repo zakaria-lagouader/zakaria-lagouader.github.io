@@ -14,24 +14,36 @@
 <body>
     <!-- HEADER SECTION -->
     <header>
-        <a href="#" id="logo">ZakariaLg.</a>
-        <ul class="nav-links">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#projects">PROJECTS</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-        </ul>
+        <div class="container">
+            <a href="#" id="logo">ZakariaLg.</a>
+            <!-- menu btn -->
+            <a href="#" id="menu-open">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+                </svg>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
     </header>
+    <!-- dark mode button -->
+    <div class="mode-btn">
+        <img src="./img/moon.png" alt="dark mode button">
+    </div>
     <!-- SHOWCASES ECTION -->
     <section id="showcase">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 px-0">
+                <div class="col-lg-6">
                     <div class="content">
                         <h1>zakaria lagouader</h1>
-                        <p>Full Stack developer Full Stack developer Full Stack developer</p>
+                        <p>Full Stack Developer <b>&middot;</b> I help people create their websites</p>
                     </div>
-                    <a href="#" data-text="contact me" class="btn">
+                    <a href="#contact" data-text="contact me" class="btn">
                         <span>contact me</span>
                     </a>
                 </div>
@@ -49,7 +61,7 @@
                         </div>
                         <div class="shape-3">
                             <svg id="trian" x="0px" y="0px" width="180px" height="180px" viewBox="0 0 180 180" xml:space="preserve">
-                                <polygon points="0,0 180,0 90,180" fill="none" stroke="#000000" stroke-width="1px" stroke-miterlimit="10"/>
+                                <polygon points="0,0 180,0 90,180" fill="none" stroke-width="1px" stroke-miterlimit="10"/>
                             </svg>
                         </div>
                     </div>
@@ -68,7 +80,11 @@
             <div class="row">
                 <div class="col-lg-5 col-md-6 mb-3">
                     <h4>About me</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, amet repellendus? Officia exercitationem et voluptatibus, minima expedita, voluptatem modi libero dolor, magnam soluta vero harum quidem laboriosam ratione delectus placeat.</p>
+                    <p>
+                        Hi my name is Zakaria Lagouader , I'm 20 years old and I'm a full stack web developer. <br>
+                        I have helped many businesses and individuals build the apps they want, which has given me more experience and confidence. <br>
+                        Now I am a bachelor student and I always try to do projects in my spare time.
+                    </p>
                 </div>
                 <div class="col-lg-3 col-md-6 mb-3">
                     <h4>Skills</h4>
@@ -77,6 +93,7 @@
                         <li><b>React</b> <span>❤</span> , Vue</li>
                         <li>php and <b>laravel</b> <span>❤</span></li>
                         <li>node js <b>express</b> <span>❤</span></li>
+                        <li><b>typescript</b> <span>❤</span> <b>Graphql</b> <span>❤</span></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-3">
@@ -84,8 +101,8 @@
                     <ul>
                         <li>React native</li>
                         <li>Elctron js</li>
-                        <li>firebase</li>
-                        <li>trying to love typescript 😁</li>
+                        <li>angular</li>
+                        <li>Chess ♟</li>
                     </ul>
                 </div>
             </div>
@@ -163,9 +180,9 @@
                 <div class="col-lg-6">
                     <h2>FEEL FREE TO <br> CONTACT ME</h2>
                     <ul>
-                        <li><a href="#">+2126 39 50 17 07</a></li>
-                        <li><a href="#">zakaria.lagouader@gmail.com</a></li>
-                        <li><a href="#">/zakaria-lagouader</a></li>
+                        <li><a href="tel:+212641815234">+2126 41 81 52 34</a></li>
+                        <li><a href="mailto:zakaria.lagouader@gmail.com">zakaria.lagouader@gmail.com</a></li>
+                        <li><a href="https://www.linkedin.com/in/zakaria-lagouader/">/zakaria-lagouader</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-6 mt-5">
@@ -173,7 +190,7 @@
                         <input type="text" name="name" placeholder="Name">
                         <input type="email" name="email" placeholder="Email">
                         <textarea name="message" placeholder="Message" rows="6"></textarea>
-                        <a href="#" data-text="send mail" class="btn">
+                        <a data-text="send mail" class="btn">
                             <span>send mail</span>
                         </a>
                     </form>

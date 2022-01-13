@@ -7,6 +7,7 @@
 @import "./sections/footer";
 
 .btn {
+    cursor: pointer;
     color: v(background);
     width: 192px;
     height: 56px;
@@ -61,5 +62,32 @@
     color: transparent;
     overflow: hidden;
     white-space: nowrap;
+}
+
+
+.mode-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    background-color: v(color);
+    border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out;
+    user-select: none;
+
+    &:hover {
+        transform: scale(0.9);
+    }
+    
+    img {
+        width: 25px;
+        height: 25px;
+    }
 }
 

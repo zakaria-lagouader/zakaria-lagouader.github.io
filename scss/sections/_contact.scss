@@ -31,13 +31,23 @@
             font-family: 'Open Sans', sans-serif;
             padding: 10px;
             border: none;
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid v(color); 
             margin-bottom: 0.7rem;
             resize: vertical;
+            color: v(color);
+            background-color: transparent;
         }
 
         .btn {
             margin-top: 2rem;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    #contact {
+        h2 {
+            font-size: clamp(3.5rem, 9vw, 4.5rem);
         }
     }
 }

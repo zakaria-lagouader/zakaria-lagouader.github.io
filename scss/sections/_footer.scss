@@ -29,7 +29,7 @@ footer {
     p, p + a {
         font-family: 'Open Sans', sans-serif;
         font-size: 15px;
-        color: #333; 
+        color: rgba($color: v(color), $alpha: 0.8); 
     }
     svg {
         position: absolute;
