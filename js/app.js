@@ -25,7 +25,7 @@ modeBtn.addEventListener("click", () => {
 })
 
 function updateIcon() {
-    modeBtnIcon.src = `/img/${currentMode === "light" ? "moon" : "sun"}.png`;
+    modeBtnIcon.src = `./img/${currentMode === "light" ? "moon" : "sun"}.png`;
 }
 
 function updateMode(mode) {
