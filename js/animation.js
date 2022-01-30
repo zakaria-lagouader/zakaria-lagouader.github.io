@@ -52,6 +52,7 @@ anime({
     });
  
  })
+// Text animation
  anime({
     targets: ['.content h1', ".content p"],
     translateX: [-1000, 0],
@@ -67,3 +68,25 @@ anime({
     duration: 1200,
     delay: 1200
  });
+
+// Menu animation
+
+const menuAnimation = anime.timeline({
+   duration: 800,
+   autoplay: false,
+});
+
+menuAnimation
+.add({
+   easing: 'easeOutExpo',
+   targets: '#sidenav',
+   scaleY: [0, 1]
+})
+.add({
+   targets: '#sidenav ul li',
+   easing: 'easeOutExpo',
+   translateY: [-50, 0],
+   opacity: [0, 1],
+   duration: 700,
+   delay: anime.stagger(100)
+}, '-=500')

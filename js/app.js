@@ -1,3 +1,6 @@
+const menuLinks = document.querySelectorAll("#sidenav ul li a");
+const openMenuBtn = document.querySelector("#menu-open");
+const closeMenuBtn = document.querySelector("#menu-close");
 const modeBtn = document.querySelector(".mode-btn");
 const modeBtnIcon = document.querySelector(".mode-btn img");
 const root = document.documentElement;
@@ -34,4 +37,21 @@ function updateMode(mode) {
     updateIcon();
 }
 
+openMenuBtn.addEventListener("click", () => {
+    document.body.style.overflow = "hidden";
+    menuAnimation.direction = "normal"
+    menuAnimation.play()
+})
+closeMenuBtn.addEventListener("click", () => {
+    document.body.style.overflow = "scroll";
+    menuAnimation.direction = "reverse"
+    menuAnimation.play()
+})
 
+menuLinks.forEach((link, i) => {
+    link.addEventListener("click", () => {
+        document.body.style.overflow = "scroll";
+        menuAnimation.direction = "reverse"
+        menuAnimation.play()
+    })
+})
