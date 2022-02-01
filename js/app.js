@@ -38,19 +38,16 @@ function updateMode(mode) {
 }
 
 openMenuBtn.addEventListener("click", () => {
-    document.body.style.overflow = "hidden";
     menuAnimation.direction = "normal"
     menuAnimation.play()
 })
 closeMenuBtn.addEventListener("click", () => {
-    document.body.style.overflow = "scroll";
     menuAnimation.direction = "reverse"
     menuAnimation.play()
 })
 
 menuLinks.forEach((link, i) => {
     link.addEventListener("click", () => {
-        document.body.style.overflow = "scroll";
         menuAnimation.direction = "reverse"
         menuAnimation.play()
     })
